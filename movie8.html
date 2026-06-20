@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Godfather</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="innerpage.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3">
+  <a class="navbar-brand fw-bold me-4" href="#">MOCTA<span style="color:#ff4da6">LE</span></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Explore</a>
+      </li>
+    </ul>
+    <form class="d-flex ms-auto">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="container">
+  <div class="hero">
+    <video controls autoplay muted loop>
+      <source src="video/the godfather.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+  </div>
+</div>
+
+<!-- Content Row -->
+<div class="content-row">
+  <div class="left">
+    <div class="top-row">
+      <div class="poster" id="poster">
+        <img src="assests/the godfather.jfif" alt="The Godfather Poster" />
+      </div>
+      <div class="info">
+        <div class="title">The Godfather</div>
+        <div class="meta">1972 • American • Crime, Drama</div>
+        <div class="btn-row">
+          <a href="https://www.imdb.com/title/tt0068646/" class="btn btn-primary" target="_blank">View Details</a>
+          <button class="btn btn-secondary">Add to Wishlist</button>
+        </div>
+      </div>
+    </div>
+
+<!-- Content Row with Sidebar -->
+<div class="content-row" style="display:flex; gap:24px; align-items:flex-start;">
+
+  <!-- Left Column: Main Content -->
+  <div class="left" style="flex:1; display:flex; flex-direction:column; gap:24px;">
+
+    <!-- Overview -->
+    <div class="section">
+      <h3>Overview</h3>
+      <p class="overview">
+        “The Godfather” is a classic American crime film directed by <b>Francis Ford Coppola</b>.<br>
+        The story chronicles the powerful Italian-American crime family of Don <b>Vito Corleone</b>, focusing on the transformation of his youngest son <b>Michael</b> from reluctant outsider to ruthless mafia boss.<br>
+        Known for its masterful storytelling, iconic performances, and influence on popular culture, The Godfather explores themes of power, family loyalty, and organized crime.
+      </p>
+    </div>
+
+            <!-- ⭐ IMDb Rating -->
+<div class="section imdb-rating">
+  <h3>IMDb Rating</h3>
+  <div class="rating-box">
+    <i class="bi bi-star-fill"></i>
+    <span class="rating-score">8.6</span>/10
+    <span class="votes">(Based on 4k+ votes)</span>
+  </div>
+</div>
+
+    <!-- 📸 Screenshots -->
+<div class="section screenshots">
+  <h3>Screenshots</h3>
+  <div class="screenshots-grid">
+    <img src="assests/nobody.jfif" alt="screenshot 1">
+    <img src="assests/evil dead.jfif" alt="screenshot 2">
+    <img src="assests/The shawnshik Redeption.jfif" alt="screenshot 3">
+    <img src="assests/ahnaf7.jpg" alt="screenshot 4">
+  </div>
+</div>
+
+    <!-- Genres -->
+    <div class="section">
+      <h3>Genres</h3>
+      <div class="tags">
+        <span class="tag">Crime</span>
+        <span class="tag">Drama</span>
+        <span class="tag">Classic</span>
+        <span class="tag">Movie</span>
+      </div>
+    </div>
+
+    <!-- Main Characters -->
+    <div class="section">
+      <h3>Main Characters</h3>
+      <div class="cast-list">
+        <div class="cast-item">
+          <img src="actor/actor170.jpg" alt="Vito Corleone" />
+          <div class="cast-name">Marlon Brando (Vito Corleone)</div>
+        </div>
+        <div class="cast-item">
+          <img src="actor/actor171.jpg" alt="Michael Corleone" />
+          <div class="cast-name">Al Pacino (Michael Corleone)</div>
+        </div>
+        <div class="cast-item">
+          <img src="actor/actor172.jpg" alt="Sonny Corleone" />
+          <div class="cast-name">James Caan (Sonny Corleone)</div>
+        </div>
+        <div class="cast-item">
+          <img src="actor/actor173.jpg" alt="Tom Hagen" />
+          <div class="cast-name">Robert Duvall (Tom Hagen)</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Right Column: Sidebar / Vibe Meter -->
+  <div class="sidebar" style="width:260px; flex-shrink:0;">
+    <div class="card">
+      <h3 class="vibe-title">Vibe Meter</h3>
+      <div class="donut"></div>
+      <div class="legend">
+        <div class="row"><span class="swatch" style="background:#ff595e;"></span> 40% Crime</div>
+        <div class="row"><span class="swatch" style="background:#8ac926;"></span> 30% Drama</div>
+        <div class="row"><span class="swatch" style="background:#370617;"></span> 20% Classic</div>
+        <div class="row"><span class="swatch" style="background:#1982c4;"></span> 10% Movie</div>
+      </div>
+      <div class="small-muted">Based on audience moods</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Audience Meter -->
+<div class="section moctale-meter">
+  <h2 class="meter-title">Audience Interaction Meter</h2>
+  <div class="progress-bar" role="progressbar">
+    <div class="segment go" style="width: 80%;"></div>
+    <div class="segment timepass" style="width: 10%;"></div>
+    <div class="segment skip" style="width: 5%;"></div>
+    <div class="segment perfect" style="width: 5%;"></div>
+  </div>
+  <div class="percentage-label">85%</div>
+  <div class="votes-label">Based on 600K+ votes</div>
+  <div class="meter-legend">
+    <div class="legend-item"><span class="legend-dot dot-go"></span> Go (80%)</div>
+    <div class="legend-item"><span class="legend-dot dot-timepass"></span> Timepass (10%)</div>
+    <div class="legend-item"><span class="legend-dot dot-skip"></span> Skip (5%)</div>
+    <div class="legend-item"><span class="legend-dot dot-perfect"></span> Perfect (5%)</div>
+  </div>
+</div>
+
+<!-- Review Form -->
+<form id="review-form" class="review-form">
+  <input type="text" id="name" placeholder="Enter your name" required>
+  <textarea id="review" placeholder="Write your review..." required></textarea>
+  <input type="number" id="stars" placeholder="Stars (0-5)" min="0" max="5">
+  <button type="submit">Post Review</button>
+</form>
+
+<div id="posted-reviews"></div>
+
+
+
+<!-- Poster Modal -->
+<div class="modal" id="posterModal">
+  <img src="" alt="Poster">
+</div>
+
+<!-- Floating Back Button -->
+<button id="backBtn" class="btn btn-outline-light floating-back-btn" title="Go Back" 
+        style="position:fixed; bottom:20px; right:20px; z-index:999; border-radius:50%; width:48px; height:48px; display:flex; align-items:center; justify-content:center; font-size:20px; box-shadow:0 4px 8px rgba(0,0,0,0.4); cursor:pointer;">
+  ←
+</button>
+
+<script src="innerpage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

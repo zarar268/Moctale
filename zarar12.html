@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Farzi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+ <link rel="stylesheet" href="innerpage.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3">
+  <a class="navbar-brand fw-bold me-4" href="#">MOCTA<span style="color:#ff4da6">LE</span></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Explore</a>
+      </li>
+    </ul>
+    <form class="d-flex ms-auto">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="container">
+  <div class="hero">
+    <video controls autoplay muted loop>
+      <source src="video/farzi.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+  </div>
+</div>
+
+<!-- container -->
+
+<div class="content-row">
+  <div class="left">
+    <div class="top-row">
+      <div class="poster" id="poster">
+        <img src="assests/zarar16.jpeg" alt="Farzi Series Poster" />
+      </div>
+      <div class="info">
+        <div class="title">Farzi</div>
+        <div class="meta">2023 • Indian Series • Thriller • Crime • Drama</div>
+        <div class="btn-row">
+          <a href="https://www.primevideo.com/" class="btn btn-primary" target="_blank">Watch on Prime Video</a>
+          <button class="btn btn-secondary">Add to Wishlist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content Row with Sidebar -->
+<div class="content-row" style="display:flex; gap:24px; align-items:flex-start;">
+
+  <!-- Left Column: Main Content -->
+  <div class="left" style="flex:1; display:flex; flex-direction:column; gap:24px;">
+
+    <!-- Overview -->
+    <div class="section">
+      <h3>Overview</h3>
+      <p class="overview">
+        <strong>Farzi</strong> is a high-stakes Indian crime thriller series.  
+        It follows <strong>Sunny</strong>, a middle-class artist who enters a dangerous game by creating counterfeit currency.  
+        Meanwhile, <strong>Michael</strong>, a Task Force officer, tries everything to catch him.  
+        The series blends fast-paced action, dark comedy, and intense drama.
+      </p>
+    </div>
+
+    
+    <!-- ⭐ IMDb Rating -->
+<div class="section imdb-rating">
+  <h3>IMDb Rating</h3>
+  <div class="rating-box">
+    <i class="bi bi-star-fill"></i>
+    <span class="rating-score">8.3</span>/10
+    <span class="votes">(Based on 53k+ votes)</span>
+  </div>
+</div>
+
+<!-- 📸 Screenshots -->
+<div class="section screenshots">
+  <h3>Screenshots</h3>
+  <div class="screenshots-grid">
+    <img src="assests/zarar15.jpeg" alt="screenshot 1">
+    <img src="assests/ahnaf10.jpg" alt="screenshot 2">
+    <img src="assests/series 1.jfif" alt="screenshot 3">
+    <img src="assests/series9.jfif" alt="screenshot 4">
+  </div>
+</div>
+
+
+    <!-- Genres -->
+    <div class="section">
+      <h3>Genres</h3>
+      <div class="tags">
+        <span class="tag">Thriller</span>
+        <span class="tag">Crime</span>
+        <span class="tag">Drama</span>
+        <span class="tag">Action</span>
+      </div>
+    </div>
+
+    <!-- Main Characters -->
+    <div class="section">
+      <h3>Main Cast</h3>
+      <div class="cast-list">
+        <div class="cast-item">
+          <img src="actor/actor299.jpeg" alt="Sunny" />
+          <div class="cast-name">Shahid Kapoor (Sunny)</div>
+        </div>
+        <div class="cast-item">
+          <img src="actor/actor300.jpeg" alt="Michael" />
+          <div class="cast-name">Vijay Sethupathi (Michael)</div>
+        </div>
+        <div class="cast-item">
+          <img src="actor/actor301.jpeg" alt="Megha" />
+          <div class="cast-name">Raashii Khanna (Megha Vyas)</div>
+        </div>
+        <div class="cast-item">
+          <img src="actor/actor302.jpeg" alt="Firoz" />
+          <div class="cast-name">Bhuvan Arora (Firoz)</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Right Column: Sidebar / Vibe Meter -->
+  <div class="sidebar" style="width:260px; flex-shrink:0;">
+    <div class="card">
+      <h3 class="vibe-title">Vibe Meter</h3>
+      <div class="donut"></div>
+      <div class="legend">
+        <div class="row"><span class="swatch" style="background:#ff595e;"></span> 40% Thriller</div>
+        <div class="row"><span class="swatch" style="background:#1982c4;"></span> 30% Crime</div>
+        <div class="row"><span class="swatch" style="background:#ffca3a;"></span> 20% Drama</div>
+        <div class="row"><span class="swatch" style="background:#8ac926;"></span> 10% Action</div>
+      </div>
+      <div class="small-muted">Based on audience moods</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Audience Meter -->
+<div class="section moctale-meter">
+  <h2 class="meter-title">Audience Interaction Meter</h2>
+  <div class="progress-bar" role="progressbar">
+    <div class="segment go" style="width: 85%;"></div>
+    <div class="segment timepass" style="width: 7%;"></div>
+    <div class="segment skip" style="width: 3%;"></div>
+    <div class="segment perfect" style="width: 5%;"></div>
+  </div>
+  <div class="percentage-label">93%</div>
+  <div class="votes-label">Based on 1.8M+ votes</div>
+  <div class="meter-legend">
+    <div class="legend-item"><span class="legend-dot dot-go"></span> Go (85%)</div>
+    <div class="legend-item"><span class="legend-dot dot-timepass"></span> Timepass (7%)</div>
+    <div class="legend-item"><span class="legend-dot dot-skip"></span> Skip (3%)</div>
+    <div class="legend-item"><span class="legend-dot dot-perfect"></span> Perfect (5%)</div>
+  </div>
+</div>
+
+<!-- Review Form -->
+<form id="review-form" class="review-form">
+  <input type="text" id="name" placeholder="Enter your name" required>
+  <textarea id="review" placeholder="Write your review..." required></textarea>
+  <input type="number" id="stars" placeholder="Stars (0-5)" min="0" max="5">
+  <button type="submit">Post Review</button>
+</form>
+
+<div id="posted-reviews"></div>
+
+<!-- Poster Modal -->
+<div class="modal" id="posterModal">
+  <img src="" alt="Poster">
+</div>
+
+
+
+
+<!-- Floating Back Button -->
+<button id="backBtns" class="btn btn-outline-light floating-back-btn" title="Go Back" 
+        style="position:fixed; bottom:20px; right:20px; z-index:999; border-radius:50%; width:48px; height:48px; display:flex; align-items:center; justify-content:center; font-size:20px; box-shadow:0 4px 8px rgba(0,0,0,0.4); cursor:pointer;">
+  ←
+</button>
+
+<script src="innerpage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+   
+
+

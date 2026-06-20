@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahnaf Masterlist</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
+  <style>
+    body {
+      background: #0f0f13;
+      color: #fff;
+      font-family: Inter, system-ui, sans-serif;
+    }
+    /* Navbar */
+    .navbar-custom {
+      background-color: rgba(20, 20, 30, 0.95);
+      backdrop-filter: blur(10px);
+    }
+    .navbar-custom .form-control {
+      background: #1e1e28;
+      border: none;
+      color: #fff;
+    }
+    .navbar-custom .form-control:focus {
+      background: #2b2b38;
+      color: #fff;
+      box-shadow: none;
+    }
+  
+    .sidebar h6 {
+      font-size: 14px;
+      color: #bbb;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .sidebar button {
+      font-size: 14px;
+      border-radius: 20px;
+      transition: all 0.2s;
+    }
+    .sidebar button.active {
+      background: linear-gradient(90deg, #6b38ff, #ff4da6);
+      border: none;
+    }
+   .sidebar {
+  width: 250px;
+  background: #1a1a28;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  top: 56px;   
+  left: 0;
+  overflow-y: auto;
+}
+
+.main {
+  margin-left: 270px;
+  padding: 20px;
+  margin-top: 56px; 
+}
+    .banner {
+      width: 100%;
+      height: 200px;
+      background-image: url(assests/bleach-rebirth-of-3840x2160-20239.jpg);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 16px;
+    }
+    .card-item {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 8px;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+    }
+    .poster {
+      flex: 1;
+      border-radius: 6px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 13px;
+      color: #aaa;
+    }
+    .platform-logo {  
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      margin-right: 8px;
+    }
+    .platform-label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+    /* Custom black and white checkboxes */
+    .form-check-input {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 24px;
+      height: 24px;
+      border: 2px solid black;
+      background-color: white;
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      margin-right: 8px;
+      vertical-align: middle;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+    .form-check-input:checked {
+      background-color: black;
+      border-color: black;
+    }
+    .form-check-input:checked::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 8px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top px-3">
+  <a class="navbar-brand fw-bold" href="#">MOCTA<span style="color: #ff4da6">LE</span></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav ms-4 me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Explore</a>
+      </li>
+    </ul>
+    <form class="d-flex w-50">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h6>Content Type</h6>
+    <div class="d-grid gap-2">
+      <button class="btn btn-outline-light btn-sm filter-btn active" data-type="all">All</button>
+      <button class="btn btn-outline-light btn-sm filter-btn" data-type="movie">Movies</button>
+      <button class="btn btn-outline-light btn-sm filter-btn" data-type="series">Series</button>
+      <button class="btn btn-outline-light btn-sm filter-btn" data-type="anime">Anime</button>
+      <button class="btn btn-outline-light btn-sm filter-btn" data-type="songs">Songs</button>
+      <button class="btn btn-outline-light btn-sm filter-btn" data-type="kdrama">K-drama</button>
+    </div>
+
+    <h6>Platforms</h6>
+    <!-- Checkboxes -->
+    <div class="form-check">
+      <input class="form-check-input platform-filter" type="checkbox" value="netflix" id="netflix"/>
+      <label class="form-check-label platform-label" for="netflix">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="platform-logo"/>Netflix
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input platform-filter" type="checkbox" value="prime" id="prime"/>
+      <label class="form-check-label platform-label" for="prime">
+        <img src="assests/prime vedio.png" class="platform-logo"/>Prime Video
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input platform-filter" type="checkbox" value="crunchyroll" id="crunchyroll"/>
+      <label class="form-check-label platform-label" for="crunchyroll">
+        <img src="assests/crunchyroll.png" class="platform-logo"/>Crunchyroll
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input platform-filter" type="checkbox" value="disney" id="disney"/>
+      <label class="form-check-label platform-label" for="disney">
+        <img src="assests/disney.png" class="platform-logo"/>Disney+
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input platform-filter" type="checkbox" value="youtube" id="youtube"/>
+      <label class="form-check-label platform-label" for="youtube">
+        <img src="assests/youtube.png" class="platform-logo"/>YouTube
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input platform-filter" type="checkbox" value="spotify" id="spotify"/>
+      <label class="form-check-label platform-label" for="spotify">
+        <img src="assests/spotify.jpg" class="platform-logo"/>Spotify
+      </label>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="main">
+    <div class="banner"></div>
+    <div class="section-header">
+      <div>
+        <h2><span style="color: #6b38ff;">Ahnaf</span>Masterlist</h2>
+        <p>Your saved and recommended titles</p>
+      </div>
+    </div>
+
+    <div class="cards-grid" id="cardsContainer">
+      <!-- All -->
+
+      <a href="ahnaf1.html" class="card-item" data-type="movie" data-platform="youtube">
+        <div class="poster" style="background-image: url('assests/ahnaf1.jpg');"></div>
+        <div>Shutter Island</div><div class="meta">Movie • 2010</div>
+      </a>
+      <a href="ahnaf2.html" class="card-item" data-type="series" data-platform="netflix">
+        <div class="poster" style="background-image: url('assests/ahnaf2.jpg');"></div>
+        <div>Money Hiest</div><div class="meta">Series • 2017</div>
+      </a>
+      <a href="ahnaf3.html" class="card-item" data-type="Kdrama" data-platform="disney">
+        <div class="poster" style="background-image: url('assests/ahnaf3.jpg');"></div>
+        <div>Light Shop</div><div class="meta">K-drama • 2024</div>
+      </a>
+      <a href="ahnaf4.html" class="card-item" data-type="anime" data-platform="crunchyroll">
+        <div class="poster" style="background-image: url('assests/blue\ lock.jpg');"></div>
+        <div>Blue Lock</div><div class="meta">Anime • 2022</div>
+      </a>
+      <a href="ahnaf5.html" class="card-item" data-type="songs" data-platform="spotify">
+        <div class="poster" style="background-image: url('assests/rollin.jpg');"></div>
+        <div>Rollin</div><div class="meta">Song • 2021</div>
+      </a>
+       <a href="ahnaf6.html" class="card-item" data-type="movie" data-platform="prime">
+        <div class="poster" style="background-image: url('assests/ahnaf4.jpg');"></div>
+        <div>Gone Girl</div><div class="meta">Movie • 2014</div>
+      </a>
+      <a href="ahnaf7.html" class="card-item" data-type="anime" data-platform="netflix">
+        <div class="poster" style="background-image: url('assests/ahnaf5.jpg');"></div>
+        <div>Lookism</div><div class="meta">Anime • 2024</div>
+      </a>
+      <a href="ahnaf8.html" class="card-item" data-type="Kdrama" data-platform="netflix">
+        <div class="poster" style="background-image: url('assests/ahnaf6.jpg');"></div>
+        <div>gyeongseong creature</div><div class="meta">K-drama • 2025</div>
+      </a>
+      <a href="ahnaf9.html" class="card-item" data-type="movie" data-platform="youtube">
+        <div class="poster" style="background-image: url('assests/ahnaf7.jpg');"></div>
+        <div>Inception</div><div class="meta">Movie • 2010</div>
+      </a>
+      <a href="ahnaf10.html" class="card-item" data-type="songs" data-platform="spotify">
+        <div class="poster" style="background-image: url('assests/ahnaf8.jpg');"></div>
+        <div>For A Reason</div><div class="meta">Song • 2025</div>
+      </a>
+      <a href="ahnaf11.html" class="card-item" data-type="kdrama" data-platform="netflix">
+        <div class="poster" style="background-image: url('assests/ahnaf9.jpg');"></div>
+        <div>My Demon</div><div class="meta">K-drama • 2023</div>
+      </a>
+       <a href="ahnaf12.html" class="card-item" data-type="series" data-platform="prime">
+        <div class="poster" style="background-image: url('assests/ahnaf10.jpg');"></div>
+        <div>The Family Man</div><div class="meta">Series • 2019</div>
+      </a>
+    
+      <a href="ahnaf13.html" class="card-item" data-type="anime" data-platform="crunchyroll">
+        <div class="poster" style="background-image: url('assests/ahnaf11.jpg');"></div>
+        <div>Dragon Ball Z</div><div class="meta">Anime • 1989</div>
+      </a>
+      <a href="ahnaf14.html" class="card-item" data-type="series" data-platform="disney">
+        <div class="poster" style="background-image: url('assests/ahnaf12.jpg');"></div>
+        <div>Better Call Saul</div><div class="meta">Series • 2015</div>
+      </a>
+      <a href="ahnaf15.html" class="card-item" data-type="songs" data-platform="spotify">
+        <div class="poster" style="background-image: url('assests/ahnaf13.jpg');"></div>
+        <div>Saiyaara</div><div class="meta">Song • 2025</div>
+      </a>
+      <a href="ahnaf16.html" class="card-item" data-type="movie" data-platform="youtube">
+        <div class="poster" style="background-image: url('assests/ahnaf14.jpg');"></div>
+        <div>oppenheimer</div><div class="meta">Movie • 2023</div>
+      </a>
+      <a href="ahnaf17.html" class="card-item" data-type="series" data-platform="prime">
+        <div class="poster" style="background-image: url('assests/zarar15.jpg');"></div>
+        <div>Mirzapur</div><div class="meta">Series • 2018</div>
+      </a>
+        <a href="ahnaf18.html" class="card-item" data-type="series" data-platform="netflix">
+        <div class="poster" style="background-image: url('assests/ahnaf15.jpg');"></div>
+        <div>Stranger Things</div><div class="meta">Series • 2016</div>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const platformFilters = document.querySelectorAll(".platform-filter");
+    const cards = document.querySelectorAll(".card-item");
+
+    function applyFilters() {
+      const activeType = document.querySelector(".filter-btn.active").dataset.type.toLowerCase();
+      const activePlatforms = Array.from(platformFilters)
+        .filter((cb) => cb.checked)
+        .map((cb) => cb.value);
+
+      cards.forEach((card) => {
+        const type = card.dataset.type.toLowerCase();
+        const platform = card.dataset.platform;
+        let show = true;
+        if (activeType !== "all" && type !== activeType) {
+          show = false;
+        }
+        if (activePlatforms.length > 0 && !activePlatforms.includes(platform)) {
+          show = false;
+        }
+        card.style.display = show ? "flex" : "none";
+      });
+    }
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        filterButtons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        applyFilters();
+      });
+    });
+
+    platformFilters.forEach((cb) => cb.addEventListener("change", applyFilters));
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

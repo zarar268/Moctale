@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Red Dead Redemption 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+ <link rel="stylesheet" href="innerpage.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3">
+  <a class="navbar-brand fw-bold me-4" href="#">MOCTA<span style="color:#ff4da6">LE</span></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Explore</a>
+      </li>
+    </ul>
+    <form class="d-flex ms-auto">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="container">
+  <div class="hero">
+    <video controls autoplay muted loop>
+      <source src="video/read dead redeption.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+  </div>
+</div>
+
+<!-- Content Row -->
+<div class="content-row">
+  <div class="left">
+    <div class="top-row">
+      <div class="poster" id="poster">
+        <img src="assests/G3.webp" alt="Red Dead Redemption 2 Poster" />
+      </div>
+      <div class="info">
+        <div class="title">Red Dead Redemption 2</div>
+        <div class="meta">2018 • Game • Action • Adventure • Open World • Western</div>
+        <div class="btn-row">
+          <a href="https://www.rockstargames.com/reddeadredemption2/" class="btn btn-primary" target="_blank">Official Page</a>
+          <button class="btn btn-secondary">Add to Wishlist</button>
+        </div>
+        <div class="seasons-count mt-3">
+          <span class="badge bg-info text-dark" style="font-size:1rem;">Platform: PS4 / PS5 / Xbox / PC • Single & Online Multiplayer</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="section">
+      <h3>Overview</h3>
+      <p class="overview">
+        Red Dead Redemption 2 is an open-world action-adventure game developed by Rockstar Games. Set in the late 1800s, players take the role of Arthur Morgan, a member of the Van der Linde gang, navigating life in the fading Wild West. The game features a vast, living world with a gripping story, dynamic weather, hunting, exploration, and an online multiplayer mode, delivering one of the most immersive gaming experiences ever.
+      </p>
+    </div>
+
+        <!-- ⭐ IMDb Rating -->
+<div class="section imdb-rating">
+  <h3>IMDb Rating</h3>
+  <div class="rating-box">
+    <i class="bi bi-star-fill"></i>
+    <span class="rating-score">8.6</span>/10
+    <span class="votes">(Based on 4k+ votes)</span>
+  </div>
+</div>
+
+
+    <!-- 📸 Screenshots -->
+<div class="section screenshots">
+  <h3>Screenshots</h3>
+  <div class="screenshots-grid">
+    <img src="assests/g10.jpg" alt="screenshot 1">
+    <img src="assests/g1.jpg" alt="screenshot 2">
+    <img src="assests/g7.webp" alt="screenshot 3">
+    <img src="assests/g6.jpg" alt="screenshot 4">
+  </div>
+</div>
+
+
+    <!-- Genres -->
+    <div class="section">
+      <h3>Genres</h3>
+      <div class="tags">
+        <span class="tag">Survival Horror</span>
+        <span class="tag">Action</span>
+        <span class="tag">Thriller</span>
+        <span class="tag">First-Person</span>
+      </div>
+    </div>
+
+
+    <!-- Genres -->
+    <div class="section">
+      <h3>Genres</h3>
+      <div class="tags">
+        <span class="tag">Action</span>
+        <span class="tag">Adventure</span>
+        <span class="tag">Open World</span>
+        <span class="tag">Western</span>
+      </div>
+    </div>
+
+    <!-- Main Characters -->
+    <div class="section">
+      <h3>Main Characters</h3>
+      <div class="cast-list">
+        <div class="cast-item">
+          <img src="actor/game9.jpg" alt="Arthur Morgan" />
+          <div class="cast-name">Arthur Morgan</div>
+        </div>
+        <div class="cast-item">
+          <img src="actor/game10.jpg" alt="Dutch van der Linde" />
+          <div class="cast-name">Dutch van der Linde</div>
+        </div>
+        <div class="cast-item">
+          <img src="actor/game11.jpg" alt="John Marston" />
+          <div class="cast-name">John Marston</div>
+        </div>
+        <div class="cast-item">
+          <img src="actor/game12.jpg" alt="Sadie Adler" />
+          <div class="cast-name">Sadie Adler</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar: Vibe Meter -->
+  <div class="sidebar" style="width:260px; flex-shrink:0;">
+    <div class="card">
+      <h3 class="vibe-title">Vibe Meter</h3>
+      <div class="donut"></div>
+      <div class="legend">
+        <div class="row"><span class="swatch" style="background:#ff595e;"></span> 45% Action</div>
+        <div class="row"><span class="swatch" style="background:#1982c4;"></span> 30% Adventure</div>
+        <div class="row"><span class="swatch" style="background:#ffca3a;"></span> 15% Story</div>
+        <div class="row"><span class="swatch" style="background:#8ac926;"></span> 10% Open World</div>
+      </div>
+      <div class="small-muted">Based on player reviews</div>
+    </div>
+  </div>
+</div>
+
+
+<form id="review-form" class="review-form">
+  <input type="text" id="name" placeholder="Enter your name" required>
+  <textarea id="review" placeholder="Write your review..." required></textarea>
+  <input type="number" id="stars" placeholder="Stars (0-5)" min="0" max="5">
+  <button type="submit">Post Review</button>
+</form>
+
+<div id="posted-reviews"></div>
+
+  
+<!-- Poster Modal -->
+<div class="modal" id="posterModal">
+  <img src="" alt="Poster">
+</div>
+<!-- Floating Back Button bottom right -->
+<button id="backBtn" class="btn btn-outline-light floating-back-btn" title="Go Back" 
+        style="position:fixed; bottom:20px; right:20px; z-index:999; border-radius:50%; width:48px; height:48px; display:flex; align-items:center; justify-content:center; font-size:20px; box-shadow:0 4px 8px rgba(0,0,0,0.4); cursor:pointer;">
+  ←
+</button>
+
+<script src="innerpage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

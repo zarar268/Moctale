@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moctale</title>
+  
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3">
+  
+    <a class="navbar-brand fw-bold" href="index.html">
+  <!-- <img src="assests/moctaale_logo-removebg-preview.png" alt="MOCTALE Logo" style="height: 100px; margin-right: 50px; top: 20px; position: absolute; z-index: 20; "> -->
+  MOCTA<span style="color:#ff4da6">LE</span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-4 me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#explores">Explore</a></li>
+        <li class="nav-item"><a class="nav-link" href="#anime">Anime</a></li>
+        <li class="nav-item"><a class="nav-link" href="#manga">Manga</a></li>
+        <li class="nav-item"><a class="nav-link" href="#manhwa">Manhwa</a></li>
+        <li class="nav-item"><a class="nav-link" href="#songs">Songs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#series">Series</a></li>
+         
+      </ul>
+
+      <form class="d-flex w-50" id="searchForm" onsubmit="return false;">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" readonly />
+        <button id="searchBtn" class="btn btn-outline-light" type="button">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="app">
+   
+
+    <!-- Center content -->
+    <main class="center">
+      
+      <div id="searchResultsSection" class="mb-5"></div>
+<header>
+  <video autoplay muted loop id="bg-video">
+    <source src="video/bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="header-content">
+    <h1>Welcome to MOCTA<span style="color:#ff4da6">LE</span></h1>
+    <p>Watch your favorite content</p>
+  </div>
+</header>
+
+      <!-- Explore Section -->
+<section id="explores" class="mb-5">
+  <h4 class="section-title">Explore Trending</h4>
+  <div class="scroll-row">
+
+    <a href="exploreonepiece.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/one\ piece.webp  ')"></div>
+        <div class="meta">One Piece</div>
+      </div>
+    </a>
+
+    <a href="exploreChainsawmen.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/chainsaw-man-the-3840x2160-23013.jpg')"></div>
+        <div class="meta">Chainsaw-Men</div>
+      </div>
+    </a>
+
+    <a href="explorejohnwick.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/john wick.jfif')"></div>
+        <div class="meta">John Wick</div>
+      </div>
+    </a>
+
+    <a href="explorelookism.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/manga 1.jfif')"></div>
+        <div class="meta">Lookism</div>
+      </div>
+    </a>
+
+    <a href="explorehint.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/song 1.jfif')"></div>
+        <div class="meta">Hint</div>
+      </div>
+    </a>
+
+    <a href="exploretruebeauty.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/manhwa1.jfif')"></div>
+        <div class="meta">True Beauty</div>
+      </div>
+    </a>
+
+    <a href="explorebreakingbad.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/series2.png')"></div>
+        <div class="meta">Breaking Bad</div>
+      </div>
+    </a>
+
+    <a href="exploredragonball.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/dragon ball.jfif')"></div>
+        <div class="meta">Dragon Ball</div>
+      </div>
+    </a>
+
+    <a href="explorefightclub.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/fight club.jfif')"></div>
+        <div class="meta">Fight Club</div>
+      </div>
+    </a>
+
+    <a href="explorebones.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/bones.jpg')"></div>
+        <div class="meta">Bones</div>
+      </div>
+    </a>
+
+    <a href="explorerollin.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/song 2.jfif')"></div>
+        <div class="meta">Rollin</div>
+      </div>
+    </a>
+
+    <a href="exploresololevling.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item" style="cursor:pointer;">
+        <div class="poster" style="background-image:url('assests/manhwa2.jfif')"></div>
+        <div class="meta">Solo Leveling</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+      <!-- Anime Section -->
+      <section id="anime" class="mb-5">
+  <h4 class="section-title">Anime</h4>
+  <div class="scroll-row">
+    <a href="Anime1.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/attack on titan.jfif');"></div>
+        <div class="meta">Attack On Titan</div>
+      </div>
+    </a>
+    <a href="Anime2.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/demon-slayer-3840x2160-23615 (1).jpg');"></div>
+        <div class="meta">Demon Slayer</div>
+      </div>
+    </a>
+    <a href="Anime3.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/black-clover-season-3840x2160-22926.jpg');"></div>
+        <div class="meta">Black Clover</div>
+      </div>
+    </a>
+    <a href="Anime4.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/blue-lock-season-2-3840x2160-20404.jpg');"></div>
+        <div class="meta">Blue Lock</div>
+      </div>
+    </a>
+    <a href="Anime5.html"style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/bleach-rebirth-of-3840x2160-20239.jpg');"></div>
+        <div class="meta">Bleach</div>
+      </div>
+    </a>
+    <a href="Anime6.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/deathnote.jfif');"></div>
+        <div class="meta">Death Note</div>
+      </div>
+    </a>
+    <a href="Anime7.html"style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/one punch man.jfif');"></div>
+        <div class="meta">One Punch Man</div>
+      </div>
+    </a>
+    <a href="Anime8.html"style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/tokyo revengers.jfif');"></div>
+        <div class="meta">Tokyo Revengers</div>
+      </div>
+    </a>
+    <a href="Anime9.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/jujutsu kaisen.jfif');"></div>
+        <div class="meta">Jujutsu Kaisen</div>
+      </div>
+    </a>
+    <a href="Anime10.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/naruto.jfif');"></div>
+        <div class="meta">Naruto</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+      <!-- Manga Section -->
+      <section id="manga" class="mb-5">
+  <h4 class="section-title">Manga</h4>
+  <div class="scroll-row">
+    <a href="manga1.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/manga13.webp');"></div>
+        <div class="meta">Boruto two blue vortex</div>
+      </div>
+    </a>
+    <a href="manga2.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/manga3.jfif');"></div>
+        <div class="meta">Sakamoto Days</div>
+      </div>
+    </a>
+    <a href="manga3.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/manga4.jfif');"></div>
+        <div class="meta">My Hero Academia</div>
+      </div>
+    </a>
+    <a href="manga4.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/manga5.jfif');"></div>
+        <div class="meta">Uzumaki</div>
+      </div>
+    </a>
+    <a href="manga5.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/manga6.jfif');"></div>
+        <div class="meta">Hunter X Hunter</div>
+      </div>
+    </a>
+    <a href="manga6.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/manga7.jfif');"></div>
+        <div class="meta">Dan Da Dan</div>
+      </div>
+    </a>
+    <a href="manga7.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/manga8.jfif');"></div>
+        <div class="meta">Psycho 100</div>
+      </div>
+    </a>
+    <a href="manga8.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/manga9.jfif');"></div>
+        <div class="meta">My Dress Up Darling</div>
+      </div>
+    </a>
+
+    <a href="manga10.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/manga11.jfif');"></div>
+        <div class="meta">Vagabond</div>
+      </div>
+    </a>
+               <a href="manga9.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/manga10.jfif');"></div>
+        <div class="meta">Berserk</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+      <!-- Manhwa Section -->
+   
+      <section id="manhwa" class="mb-5">
+        <h4 class="section-title">Mahnwa</h4>
+        <div class="scroll-row">
+          <a href="manhwa1.html"  style="text-decoration:none; color:inherit;">
+            <div class="card-item" style="cursor:pointer;">
+              <div class="poster" style="background-image:url('assests/manhwa3.jfif')"></div>
+              <div class="meta">  Viral Hit</div>
+            </div>
+          </a>
+          <a href="manhwa2.html" style="text-decoration:none; color:inherit;">
+            <div class="card-item" style="cursor:pointer;">
+              <div class="poster" style="background-image:url('assests/manhwa4.jfif')"></div>
+              <div class="meta">Quetism</div>
+            </div>
+          </a>
+          <a href="manhwa3.html" style="text-decoration:none; color:inherit;">
+            <div class="card-item" style="cursor:pointer;">
+              <div class="poster" style="background-image:url('assests/manhwa5.jfif')"></div>
+              <div class="meta">Study Group</div>
+            </div>
+          </a>
+          <a href="manhwa4.html" style="text-decoration:none; color:inherit;">
+            <div class="card-item" style="cursor:pointer;">
+              <div class="poster" style="background-image:url('assests/manhwa\ 6.jfif')"></div>
+              <div class="meta">The Boxer</div>
+            </div>
+          </a>
+          <a href="manhwa5.html" style="text-decoration:none; color:inherit;">
+            <div class="card-item" style="cursor:pointer;">
+              <div class="poster" style="background-image:url('assests/manhwa\ 7.jfif')"></div>
+              <div class="meta">Tears on a Weather Flower</div>
+            </div>
+          </a>
+           <a href="manhwa6.html" style="text-decoration:none; color:inherit;">
+            <div class="card-item" style="cursor:pointer;">
+              <div class="poster" style="background-image:url('assests/manhwa\ 8.jfif')"></div>
+              <div class="meta">Killer Peter</div>
+            </div>
+          </a>
+           <a href="manhwa7.html" style="text-decoration:none; color:inherit;">
+            <div class="card-item" style="cursor:pointer;">
+              <div class="poster" style="background-image:url('assests/manhwa\ 9.jfif ')"></div>
+              <div class="meta">The Beginning After The End</div>
+            </div>
+          </a>
+           <a href="manhwa8.html" style="text-decoration:none; color:inherit;">
+            <div class="card-item" style="cursor:pointer;">
+              <div class="poster" style="background-image:url('assests/manhwa\ 10.jfif')"></div>
+              <div class="meta">My Life as a Loser</div>
+            </div>
+          </a>
+           <a href="manhwa9.html" style="text-decoration:none; color:inherit;">
+            <div class="card-item" style="cursor:pointer;">
+              <div class="poster" style="background-image:url('assests/manhwa\ 11.jfif')"></div>
+              <div class="meta">Dead Mention</div>
+            </div>
+          </a>
+             
+        </div>
+      </section>
+
+      <!-- Songs Section -->
+      <section id="songs" class="mb-5">
+  <h4 class="section-title">Songs</h4>
+  <div class="scroll-row">
+    <a href="song1.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/song 3.jfif');"></div>
+        <div class="meta">Maula Mera Maula</div>
+      </div>
+    </a>
+    <a href="song2.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/song 4.jfif');"></div>
+        <div class="meta">Barbaad</div>
+      </div>
+    </a>
+    <a href="song3.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/song 5.jfif');"></div>
+        <div class="meta">Attention</div>
+      </div>
+    </a>
+    <a href="song4.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/song 6.jfif');"></div>
+        <div class="meta">Wishes</div>
+      </div>
+    </a>
+    <a href="song5.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/song 7.jfif');"></div>
+        <div class="meta">Haseen</div>
+      </div>
+    </a>
+    <a href="song6.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/song 8.jfif');"></div>
+        <div class="meta">Ehsaas</div>
+      </div>
+    </a>
+    <a href="song7.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/song 9.jfif');"></div>
+        <div class="meta">Chaleya</div>
+      </div>
+    </a>
+    <a href="song8.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/song 10.jfif');"></div>
+        <div class="meta">O Rangrez</div>
+      </div>
+    </a>
+    <a href="song9.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/song 11.jfif');"></div>
+        <div class="meta">Starboy</div>
+      </div>
+    </a>
+    <a href="song10.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/song 12.jfif');"></div>
+        <div class="meta">Jhol</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- games -->
+ <section id="games" class="mb-5">
+  <h4 class="section-title">Games</h4>
+  <div class="scroll-row">
+    <a href="g1.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/g1.jpg');"></div>
+        <div class="meta">Resident Evil Village</div>
+      </div>
+    </a>
+    <a href="g2.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/G2.webp');"></div>
+        <div class="meta">Grand Theft Auto V </div>
+      </div>
+    </a>
+    <a href="g3.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/G3.webp');"></div>
+        <div class="meta">Red Dead Redemption 2</div>
+      </div>
+    </a>
+    <a href="g4.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/G4.webp');"></div>
+        <div class="meta">Ghost of Tsushima</div>
+      </div>
+    </a>
+    <a href="g5.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/G5.webp');"></div>
+        <div class="meta">Sekiro: Shadows Die Twice</div>
+      </div>
+    </a>
+    <a href="g6.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/g6.jpg');"></div>
+        <div class="meta">Resident Evil 4</div>
+      </div>
+    </a>
+    <a href="g7.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/g7.webp');"></div>
+        <div class="meta">Uncharted 4: A Thief’s End</div>
+      </div>
+    </a>
+    <a href="g8.html"  style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/g8.jpeg');"></div>
+        <div class="meta">Spider-Man: Miles Morales</div>
+      </div>
+    </a>
+    <a href="g9.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/g9.jpg');"></div>
+        <div class="meta">The Last Of Us</div>
+      </div>
+    </a>
+    <a href="g10.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/g10.jpg');"></div>
+        <div class="meta">Tekken 8</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+     <!-- Movies Section -->
+<section id="movies" class="mb-5">
+  <h4 class="section-title">Movies</h4>
+  <div class="scroll-row">
+    <a href="movie1.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/20th.jfif');"></div>
+        <div class="meta">20th Century Girl</div>
+      </div>
+    </a>
+    <a href="movie2.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/f9.jfif');"></div>
+        <div class="meta">Fast 9</div>
+      </div>
+    </a>
+    <a href="movie3.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/nobody.jfif');"></div>
+        <div class="meta">Nobody</div>
+      </div>
+    </a>
+    <a href="movie4.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/old boy.jfif');"></div>
+        <div class="meta">Old Boy</div>
+      </div>
+    </a>
+    <a href="movie5.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/evil dead.jfif');"></div>
+        <div class="meta">Evil Dead Rise</div>
+      </div>
+    </a>
+    <a href="movie6.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/Incendies.jpg');"></div>
+        <div class="meta">Incendies</div>
+      </div>
+    </a>
+    <a href="movie7.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/SHUTER ISLAND.jfif');"></div>
+        <div class="meta">Shutter Island</div>
+      </div>
+    </a>
+    <a href="movie8.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/the godfather.jfif');"></div>
+        <div class="meta">The Godfather</div>
+      </div>
+    </a>
+    <a href="movie9.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/rocky.jfif');"></div>
+        <div class="meta">Rocky V</div>
+      </div>
+    </a>
+    <a href="movie10.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/The shawnshik Redeption.jfif');"></div>
+        <div class="meta">The Shawshank Redemption</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+     <!-- Series Section -->
+<section id="series" class="mb-5">
+  <h4 class="section-title">Series</h4>
+  <div class="scroll-row">
+    <a href="series1.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/series 1.jfif');"></div>
+        <div class="meta">Game of Thrones</div>
+      </div>
+    </a>
+
+    <a href="series2.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/series3.jfif');"></div>
+        <div class="meta">Stranger Things</div>
+      </div>
+    </a>
+
+    <a href="series3.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/series4.jfif');"></div>
+        <div class="meta">Money Heist</div>
+      </div>
+    </a>
+
+    <a href="series4.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/series5.jfif');"></div>
+        <div class="meta">Cobra Kai</div>
+      </div>
+    </a>
+
+    <a href="series5.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/series 6.jfif');"></div>
+        <div class="meta">Better Call Saul</div>
+      </div>
+    </a>
+
+    <a href="series6.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/series7.jfif');"></div>
+        <div class="meta">Vikings</div>
+      </div>
+    </a>
+
+    <a href="series7.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/series8.jfif');"></div>
+        <div class="meta">The Last Kingdom</div>
+      </div>
+    </a>
+
+    <a href="series8.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/series9.jfif');"></div>
+        <div class="meta">Succession</div>
+      </div>
+    </a>
+
+    <a href="series9.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/series10.jfif');"></div>
+        <div class="meta">True Detective</div>
+      </div>
+    </a>
+
+    <a href="series10.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/series11.jfif');"></div>
+        <div class="meta">Sherlock</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+ <!-- Kdrama Section -->
+<section id="series" class="mb-5">
+  <h4 class="section-title">Kdrama</h4>
+  <div class="scroll-row">
+    <a href="k1.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/kdrama1.jfif');"></div>
+        <div class="meta">Queen of Tears</div>
+      </div>
+    </a>
+
+    <a href="k2.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/kdrama2.jfif');"></div>
+        <div class="meta">The Penthouse</div>
+      </div>
+    </a>
+
+    <a href="k3.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/kdrama3.jfif');"></div>
+        <div class="meta">My Demon</div>
+      </div>
+    </a>
+
+    <a href="k4.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/kdrama4.jfif');"></div>
+        <div class="meta">All of Us Are Dead</div>
+      </div>
+    </a>
+
+    <a href="k5.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/kdrama5.jfif');"></div>
+        <div class="meta">Squid Game</div>
+      </div>
+    </a>
+
+    <a href="k6.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/kdrama6.jfif');"></div>
+        <div class="meta">Alice in Borderland</div>
+      </div>
+    </a>
+
+    <a href="k7.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/kdrama7.jfif');"></div>
+        <div class="meta">Weak Hero Class 2</div>
+      </div>
+    </a>
+
+    <a href="k8.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/kdrama8.jfif');"></div>
+        <div class="meta">Bloodhounds</div>
+      </div>
+    </a>
+
+    <a href="k9.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/kdrama9.jfif');"></div>
+        <div class="meta">When Life Gives You Tangerines</div>
+      </div>
+    </a>
+
+    <a href="k10.html" style="text-decoration:none; color:inherit;">
+      <div class="card-item">
+        <div class="poster" style="background-image: url('assests/k10.webp');"></div>
+        <div class="meta">Good Boy</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+      <!-- Curated Collection Section -->
+      <section id="curated" class="mb-5">
+        <h4 class="section-title">Creator's Collection</h4>
+        <div class="scroll-row">
+          <a href="zararmasterlist.html" class="card-item text-decoration-none text-light">
+            <div class="poster" style="background-image: url(assests/WhatsApp\ Image\ 2025-09-26\ at\ 3.27.18\ PM.jpeg);"></div>
+            <div class="meta">Zarar</div>
+          </a>
+          <a href="ahnafmasterlist.html" class="card-item text-decoration-none text-light">
+            <div class="poster" style="background:linear-gradient(180deg,#226,#111)"></div>
+            <div class="meta">Ahnaf Sheikh</div>
+          </a>
+        </div>
+      </section>
+      <!-- More Reasons -->
+  <section class="reasons-section">
+    <h2>More Reasons to Join</h2>
+    <div class="row g-3">
+      <div class="col-md-3">
+        <div class="reason-card text-center">
+          <i class="bi bi-tv display-5 text-danger"></i>
+          <h5>Enjoy on your TV</h5>
+          <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="reason-card text-center">
+          <i class="bi bi-download display-5 text-danger"></i>
+          <h5>Download shows</h5>
+          <p>Save your favorites easily and always have something to watch offline.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="reason-card text-center">
+          <i class="bi bi-phone display-5 text-danger"></i>
+          <h5>Watch everywhere</h5>
+          <p>Stream on your phone, tablet, laptop, and TV without paying more.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="reason-card text-center">
+          <i class="bi bi-people display-5 text-danger"></i>
+          <h5>Create profiles for kids</h5>
+          <p>Send kids on adventures with their favorite characters in a space made just for them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+          What is Moctale?
+          <span class="accordion-icon"></span>
+        </button>
+      </h2>
+      <div id="q1" class="accordion-collapse collapse">
+        <div class="accordion-body">Moctale is a streaming service that offers movies, shows, and more.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+          How much does Moctale cost?
+          <span class="accordion-icon"></span>
+        </button>
+      </h2>
+      <div id="q2" class="accordion-collapse collapse">
+        <div class="accordion-body">Plans range depending on features and quality.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+          Where can I watch?
+          <span class="accordion-icon"></span>
+        </button>
+      </h2>
+      <div id="q3" class="accordion-collapse collapse">
+        <div class="accordion-body">Watch anywhere, anytime, on any device.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <footer>
+  <p>Ready to watch? Enter your email to create or restart your membership.</p>
+  <form class="row g-2 email-form">
+    <input type="email" placeholder="Email address">
+    <button type="submit">Get Started ></button>
+  </form>
+
+  <!-- Footer Links -->
+  <div class="footer-links">
+    <div class="link-column">
+      <a href="#">FAQ</a>
+      <a href="#">Investor Relations</a>
+      <a href="#">Privacy</a>
+      <a href="#">Speed Test</a>
+    </div>
+    <div class="link-column">
+      <a href="#">Help Center</a>
+      <a href="#">Jobs</a>
+      <a href="#">Cookie Preferences</a>
+      <a href="#">Legal Notices</a>
+    </div>
+    <div class="link-column">
+      <a href="#">Account</a>
+      <a href="#">Ways to Watch</a>
+      <a href="#">Corporate Info</a>
+    </div>
+    <div class="link-column">
+      <a href="#">Media Center</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+
+
+  <p class="mt-3">Moctale</p>
+</footer>
+    </main>
+<!-- Sidebar container -->
+<aside id="editorSidebar" class="right-col editor-sidebar">
+  <!-- Toggle Button on the right edge -->
+  <div class="label">Editor's Pick Of The Week</div>
+
+  <div class="stack">
+    <a href="editor1.html" style="text-decoration:none; color:inherit;">
+      <div class="mini-card">
+        <div class="mini-thumb" style="background-image:url('assests/editors%204.jfif');"></div>
+        <div class="mini-info">
+          <div style="font-weight:700">Superman Legacy</div>
+          <div class="meta">Movie • 2023</div>
+        </div>
+      </div>
+    </a>
+
+    <a href="editor2.html" style="text-decoration:none; color:inherit;">
+      <div class="mini-card">
+        <div class="mini-thumb" style="background-image:url('assests/editors%206.jfif');"></div>
+        <div class="mini-info">
+          <div style="font-weight:700">Kaiju On 8</div>
+          <div class="meta">Anime • 2025</div>
+        </div>
+      </div>
+    </a>
+
+    <a href="editor3.html" style="text-decoration:none; color:inherit;">
+      <div class="mini-card">
+        <div class="mini-thumb" style="background-image:url('assests/editors%203.jfif');"></div>
+        <div class="mini-info">
+          <div style="font-weight:700">Avengers: Endgame</div>
+          <div class="meta">Movie • 2019</div>
+        </div>
+      </div>
+    </a>
+
+    <a href="editor4.html" style="text-decoration:none; color:inherit;">
+      <div class="mini-card">
+        <div class="mini-thumb" style="background-image:url('assests/editors%20.jfif');"></div>
+        <div class="mini-info">
+          <div style="font-weight:700">One Piece Fan Letter</div>
+          <div class="meta">Short-Film • 2023</div>
+        </div>
+      </div>
+    </a>
+
+    <a href="editor5.html" style="text-decoration:none; color:inherit;">
+      <div class="mini-card">
+        <div class="mini-thumb" style="background-image:url('assests/editors%207.jfif');"></div>
+        <div class="mini-info">
+          <div style="font-weight:700">Omniscient Reader</div>
+          <div class="meta">Manhwa • 2020</div>
+        </div>
+      </div>
+    </a>
+
+    <a href="editor6.html" style="text-decoration:none; color:inherit;">
+      <div class="mini-card">
+        <div class="mini-thumb" style="background-image:url('assests/manga12.webp');"></div>
+        <div class="mini-info">
+          <div style="font-weight:700">The Climber</div>
+          <div class="meta">Manga • 2011</div>
+        </div>
+      </div>
+    </a>
+
+    <a href="editor7.html" style="text-decoration:none; color:inherit;">
+      <div class="mini-card">
+        <div class="mini-thumb" style="background-image:url('assests/editors%205.jfif');"></div>
+        <div class="mini-info">
+          <div style="font-weight:700">All Of Us Are Dead</div>
+          <div class="meta">K-drama • 2022</div>
+        </div>
+      </div>
+    </a>
+
+    <a href="editor8.html" style="text-decoration:none; color:inherit;">
+      <div class="mini-card">
+        <div class="mini-thumb" style="background-image:url('assests/editors%202.jfif');"></div>
+        <div class="mini-info">
+          <div style="font-weight:700">Palm Springs</div>
+          <div class="meta">Comedy • 2020</div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+
+<!-- Advanced Search Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white border-0 shadow-lg rounded-4">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-semibold" id="searchModalLabel">
+          <i class="bi bi-search me-2"></i> Advanced Search
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form id="modalSearchForm">
+          <div class="row g-4">
+
+         <div class="col-md-6 col-lg-4">
+    <label for="moodSelect" class="form-label">Your Mood</label>
+  <select id="typeSelect" class="form-select" required>
+    <option value="all" selected>📚 All Types</option>
+    <option value="anime">🎌 Anime</option>
+    <option value="manhwa">📖 Manhwa</option>
+    <option value="manga">📖Manga</option>
+    <option value="movies">🎬 Movies</option>
+    <option value="songs">🎵 Songs</option>
+    <option value="series">📺 Series</option>
+  </select>
+</div>
+
+            <!-- Mood -->
+            <div class="col-md-6 col-lg-4">
+              <label for="moodSelect" class="form-label">Your Mood</label>
+              <select id="moodSelect" class="form-select" required>
+                <option value="" selected disabled>Select mood</option>
+                <option value="angry">😠 Angry</option>
+                <option value="falling-in-love">💖 Falling in Love</option>
+                <option value="sad">😢 Sad</option>
+                <option value="broken">💔 Broken</option>
+                <option value="chill">🧘 Chill</option>
+              </select>
+            </div>
+
+            <!-- Weather -->
+            <div class="col-md-6 col-lg-4">
+              <label for="weatherSelect" class="form-label">Current Weather</label>
+              <select id="weatherSelect" class="form-select" required>
+                <option value="" selected disabled>Select weather</option>
+                <option value="cold">❄️ Cold</option>
+                <option value="warm">🌤️ Warm</option>
+                <option value="moony">🌙 Moony</option>
+                <option value="sunny">☀️ Sunny</option>
+                <option value="rainy">🌧️ Rainy</option>
+                <option value="cloudy">☁️ Cloudy</option>
+              </select>
+            </div>
+
+          </div>
+        </form>
+
+        <!-- Results Preview -->
+        <div class="mt-5">
+          <h6 class="fw-semibold mb-3">🎯 Preview Results</h6>
+          <div id="resultsContainer" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+            <p class="text-muted">Select all filters above to see results.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer border-0 justify-content-between pt-0">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">
+          <i class="bi bi-x-circle me-1"></i> Cancel
+        </button>
+        <button id="searchApplyBtn" type="button" class="btn btn-primary px-4" disabled>
+          <i class="bi bi-check-circle me-1"></i> Apply Search
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

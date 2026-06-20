@@ -1,0 +1,778 @@
+:root {
+      --bg1: #0f0f13;
+      --bg2: #2b2430;
+      --card-bg: rgba(255, 255, 255, 0.03);
+      --muted: rgba(255, 255, 255, 0.6);
+    }
+    html, body {height: 100%;}
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #0b0b0f 0%, #201427 60%);
+      color: #fff;
+      overflow: auto;
+    }
+
+    /* Navbar */
+    .navbar-custom {
+      background-color: rgba(20, 20, 30, 0.95);
+      backdrop-filter: blur(10px);
+    }
+    .navbar-custom .form-control {
+      background: #1e1e28;
+      border: none;
+      color: #fff;
+    }
+    .navbar-custom .form-control:focus {
+      background: #2b2b38;
+      color: #fff;
+      box-shadow: none;
+    }
+
+    /* Layout */
+  .app {
+  display: grid;
+  grid-template-columns: 1fr 320px; /* middle takes full width, right stays fixed */
+  gap: 24px;
+  padding: 20px;
+  height: calc(100vh - 56px);
+  box-sizing: border-box;
+}
+
+   
+    /* Center content */
+    .center {
+      padding: 12px 8px;
+      overflow: auto;
+    }
+    .section-title {
+      font-weight: 700;
+      margin: 12px 6px 10px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+    .card-item {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 8px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: transform 0.18s ease;
+      overflow: hidden;
+    }
+    .card-item:hover {transform: translateY(-6px);}
+    .poster {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      border-radius: 6px;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* Horizontal scroll sections */
+    .scroll-row {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+    }
+    .scroll-row .card-item {
+      min-width: 160px;
+      flex: 0 0 auto;
+    }
+
+    /* Right column */
+    .right-col {
+      padding: 12px 8px;
+      overflow: auto;
+    }
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .stack .mini-card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .mini-thumb {
+      width: 72px;
+      height: 90px;
+      border-radius: 6px;
+      background-size: cover;
+      background-position: center;
+    }
+    .mini-info {font-size: 13px;}
+
+    /* scrollbar small */
+    ::-webkit-scrollbar {height: 8px;width: 8px;}
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+    }
+   /* Trending Now */
+    .trending-section {
+      padding: 50px 5%;
+    }
+    .trending-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .trending-cards {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .trending-cards::-webkit-scrollbar {
+      display: none;
+    }
+    .trending-card {
+      position: relative;
+      flex: 0 0 160px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .trending-card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+    .trending-number {
+      position: absolute;
+      left: -15px;
+      bottom: -10px;
+      font-size: 60px;
+      font-weight: 900;
+      color: #222;
+      -webkit-text-stroke: 2px #fff;
+    }
+
+ 
+/* ===========================
+   Reasons Section (Transparent)
+=========================== */
+.reasons-section {
+  padding: 60px 5%;
+  margin-bottom: 80px; /* space before footer */
+  text-align: center;
+}
+
+.reasons-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.reason-card {
+  background: rgba(26, 26, 26, 0.3); /* more transparent */
+  padding: 25px 20px;
+  border-radius: 12px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.reason-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(255, 0, 0, 0.4);
+  opacity: 0.9;
+}
+
+.reason-card i {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #815a9b;
+}
+
+.reason-card:hover i {
+  transform: scale(1.2);
+  color: #815a9b;
+;
+}
+
+.reason-card h5 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.reason-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 60px 5%;
+  max-width: 900px;
+  margin: 0 auto 80px auto;
+  backdrop-filter: blur(6px);
+  background: rgba(20, 20, 20, 0.35); /* transparent */
+  border-radius: 15px;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Accordion Buttons */
+.accordion-button {
+  background: rgba(48,48,48,0.3);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.accordion-button:hover {
+  background: rgba(188, 136, 199, 0.5);
+  box-shadow: 0 4px 15px rgba(101, 62, 192, 0.3);
+}
+
+.accordion-button:after {
+  display: none; /* remove default Bootstrap arrow */
+}
+
+/* Custom Arrow */
+.accordion-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when expanded */
+.accordion-button:not(.collapsed) .accordion-icon {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.accordion-body {
+  background: rgba(26, 26, 26, 0.25); /* transparent */
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+/* Footer */
+footer {
+  background: transparent;
+  padding: 60px 5%;
+  color: #ccc;
+  font-size: 0.9rem;
+  backdrop-filter: blur(8px);
+  border-top: 1px solid #444;
+  text-align: center;
+}
+
+/* Email Form */
+.email-form {
+  justify-content: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.email-form input {
+  background: transparent;
+  border: 1px solid #666;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 50px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.email-form input:focus {
+  background: #222;
+  border-color: #ff0000;
+  outline: none;
+}
+
+.email-form button {
+  background: #ff0000;
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.email-form button:hover {
+  background: #918c8c;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Footer Links - Vertical Columns */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Headings - Elegant Serif */
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  letter-spacing: -0.5px;
+}
+p, li, a, span {
+  font-family: 'Inter', sans-serif;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #5f4faa;
+  text-decoration: underline;
+}
+
+/* Footer Bottom Text */
+footer p:last-child {
+  margin-top: 25px;
+  font-size: 0.85rem;
+  color: #777;
+}
+/* Header */
+header {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* pehle 100vh tha, ab 70vh */
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+/* Header Content */
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  max-width: 90%;
+  padding: 20px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.btn-get-started {
+  background: #ff0000;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+  background: #ff4d4d;
+  box-shadow: 0 0 20px rgba(255,0,0,0.6);
+  transform: translateY(-2px);
+}
+    /* responsive */
+    @media (max-width: 1000px) {
+      .app {grid-template-columns: 60px 1fr;}
+      .right-col {display: none;}
+    }
+    /* Hover effects for all cards */
+.card-item,
+.mini-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card-item:hover,
+.mini-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #6b38ff33, #ff4da633); /* theme glow */
+}
+/* Scroll-triggered animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+/* Show state */
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Directions variations */
+.scroll-animate[data-direction="up"]    { transform: translateY(20px); }
+.scroll-animate[data-direction="down"]  { transform: translateY(-20px); }
+.scroll-animate[data-direction="left"]  { transform: translateX(-20px); }
+.scroll-animate[data-direction="right"] { transform: translateX(20px); }
+
+.scroll-animate.show[data-direction="up"],
+.scroll-animate.show[data-direction="down"],
+.scroll-animate.show[data-direction="left"],
+.scroll-animate.show[data-direction="right"] {
+  transform: translate(0, 0);
+}
+/* Modal Content - Transparent Glassmorphism Style with Purple-Black Gradient */
+#searchModal .modal-content {
+  background: rgba(30, 10, 40, 0.6); /* dark translucent purple-black */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 1rem;
+  border: 1.5px solid rgba(180, 150, 220, 0.25);
+  color: #eee;
+  box-shadow: 0 8px 32px 0 rgba(120, 60, 180, 0.5);
+  transition: background 0.3s ease;
+}
+
+/* Modal Header */
+#searchModal .modal-header {
+  border-bottom: none;
+  padding-bottom: 0.5rem;
+  color: #e0d8ff;
+}
+
+/* Labels */
+#searchModal label.form-label {
+  font-weight: 600;
+  color: #d8cff8;
+  text-shadow: 0 1px 3px rgba(50, 0, 80, 0.8);
+}
+
+/* Transparent Select Inputs */
+#searchModal select.form-select {
+  background: rgba(220, 200, 255, 0.1);
+  border: 1.5px solid rgba(180, 150, 220, 0.3);
+  color: #a29bc0;
+  border-radius: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  box-shadow: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+#searchModal select.form-select:focus {
+  outline: none;
+  border-color: #b287ff;
+  background: rgba(220, 200, 255, 0.15);
+  box-shadow: 0 0 10px #b287ffaa;
+  color: #000000;
+}
+
+/* Buttons: Transparent with purple gradient hover */
+#searchApplyBtn {
+  background: rgba(178, 120, 255, 0.6);
+  border: none;
+  font-weight: 700;
+  border-radius: 2rem;
+  padding: 0.55rem 2.5rem;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(178, 120, 255, 0.5);
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+#searchApplyBtn:disabled {
+  background: rgba(178, 120, 255, 0.25);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+#searchApplyBtn:not(:disabled):hover {
+  background: linear-gradient(45deg, #b287ff, #7b4eff);
+  box-shadow: 0 0 20px #7b4effcc, 0 0 30px #b287ffcc;
+}
+
+/* Cancel Button */
+#searchModal .btn-outline-light {
+  border-radius: 2rem;
+  padding: 0.55rem 1.8rem;
+  font-weight: 600;
+  color: #ddd;
+  border: 1.5px solid rgba(180, 150, 220, 0.35);
+  background: transparent;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+#searchModal .btn-outline-light:hover {
+  background: rgba(180, 150, 220, 0.15);
+  border-color: #b287ff;
+  color: #b287ff;
+}
+
+/* Results Cards - Glass Cards with purple-black tint */
+#resultsContainer .card {
+  background: rgba(180, 150, 220, 0.05);
+  border-radius: 1rem;
+  border: 1.5px solid rgba(180, 150, 220, 0.25);
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(120, 60, 180, 0.15);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#resultsContainer .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 36px rgba(120, 60, 180, 0.4);
+  background: rgba(180, 150, 220, 0.1);
+}
+
+/* Card Image */
+#resultsContainer .card-img-top {
+  flex-shrink: 0;
+  height: 180px;
+  object-fit: cover;
+  filter: drop-shadow(0 0 5px rgba(178, 120, 255, 0.3));
+  transition: filter 0.35s ease;
+}
+
+#resultsContainer .card:hover .card-img-top {
+  filter: drop-shadow(0 0 12px #b287ff);
+}
+
+/* Card Body */
+#resultsContainer .card-body {
+  padding: 1rem 1rem 1.2rem;
+  background: transparent;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card Title */
+#resultsContainer .card-title {
+  color: #b287ff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 0 8px rgba(178, 120, 255, 0.6);
+}
+
+/* Card Text */
+#resultsContainer .card-text {
+  font-size: 0.85rem;
+  color: #cfc6ff;
+  line-height: 1.3;
+}
+
+/* Scrollbar for modal body */
+/* Style for selected option inside dropdown (when focused/highlighted) */
+#searchModal select.form-select option {
+  background-color: rgba(90, 30, 120, 0.7); /* purple shade */
+  color: #e0d8ff;
+}
+
+/* Optional: consistent look across all selected text */
+#searchModal ::selection {
+  background: rgba(120, 70, 180, 0.5);
+  color: #ffffff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  #searchApplyBtn, #searchModal .btn-outline-light {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  /* Layout switches to column */
+  .app {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+    height: auto;
+  }
+
+  .right-col {
+    display: none;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .header-content p {
+    font-size: 1rem;
+  }
+
+  .btn-get-started {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .scroll-row {
+    gap: 12px;
+  }
+
+  .reason-card {
+    padding: 20px 12px;
+  }
+
+  .faq-section {
+    padding: 40px 16px;
+  }
+
+  .email-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .email-form input,
+  .email-form button {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .trending-section {
+    padding: 30px 4%;
+  }
+
+  .trending-cards {
+    gap: 10px;
+  }
+
+  .trending-card {
+    flex: 0 0 140px;
+  }
+
+  .trending-number {
+    font-size: 48px;
+    left: -10px;
+    bottom: -6px;
+  }
+}
+
+/* Smaller screens - XS */
+@media (max-width: 480px) {
+  .card-item,
+  .scroll-row .card-item {
+    min-width: 140px;
+  }
+
+  .modal-content {
+    margin: 10px;
+  }
+
+  #searchModal .modal-body {
+    max-height: 60vh;
+    padding-right: 0.25rem;
+  }
+
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-content p {
+    font-size: 0.95rem;
+  }
+
+  .reason-card h5 {
+    font-size: 1rem;
+  }
+
+  .reason-card p {
+    font-size: 0.85rem;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+
+  .btn-get-started {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  #searchApplyBtn,
+  #searchModal .btn-outline-light {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
